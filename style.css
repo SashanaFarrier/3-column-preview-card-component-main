@@ -41,6 +41,10 @@ img {
   height: 40px;
 }
 
+main {
+  margin-top: 2em; 
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
