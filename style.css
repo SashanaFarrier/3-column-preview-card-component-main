@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --card-1-bg-clr: hsl(31, 77%, 52%);
+  --card-2-bg-clr: hsl(184, 100%, 22%);
+  --card-3-bg-clr: hsl(179, 100%, 13%);
+  --text-clr: hsla(0, 0%, 100%, 0.75);
+  --btn-clr: hsl(0, 0%, 95%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  color: var(--text-clr);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  margin-block: .5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 60px;
+  height: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards__container {
+  overflow: hidden;
+  margin-top: 2em;
+  margin-inline: auto;
+  background: red;
+  border-radius: 10px
+}
+
+.card {
+  padding: 2em;
+  position: relative;
+}
+
+.card__body {
+  max-width: 33ch
+}
+
+.card__first {
+  background: var(--card-1-bg-clr);
+}
+
+.card__second {
+  background: var(--card-2-bg-clr);
+}
+
+.card__third {
+  background: var(--card-3-bg-clr);
+}
+
+.card .btn {
+  display: inline-block;
+  margin: 2em 0 1em;
+  padding: .7em 2em;
+  background: var(--btn-clr);
+  border-radius: 50vw;
+  cursor: pointer;
+  transition: all 500ms ease-out;
+}
+
+.card__first .btn {
+  color: var(--card-1-bg-clr)
+}
+
+.card__first .btn:hover {
+  color: var(--btn-clr);
+  background-color: var(--card-1-bg-clr);
+  outline: 1px solid var(--btn-clr)
+}
+
+.card__second .btn {
+  color: var(--card-2-bg-clr)
+}
+
+.card__second .btn:hover {
+  color: var(--btn-clr);
+  background-color: var(--card-2-bg-clr);
+  outline: 1px solid var(--btn-clr)
+}
+
+.card__third .btn {
+  color: var(--card-3-bg-clr)
+}
+
+.card__third .btn:hover {
+  color: var(--btn-clr);
+  background-color: var(--card-3-bg-clr);
+  outline: 1px solid var(--btn-clr)
+}
+
+@media screen and (min-width: 800px){
+  .cards__container {
+    display: flex;
+    max-width: 1440px;
+    min-height: 450px;
+  }
+
+  .card__body {
+  max-width: 30.5ch
+  }
+
+
+  .card .btn {
+    position: absolute;
+    bottom: 1em;
+
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--card-2-bg-clr);
+  margin: 4em 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
