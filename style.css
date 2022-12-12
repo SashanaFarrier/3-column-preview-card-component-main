@@ -142,7 +142,6 @@ main {
   font-size: 11px;
   text-align: center;
   color: var(--card-2-bg-clr);
-  margin: 4em 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
